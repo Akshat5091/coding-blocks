@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  {{>navbar isAdmin=isAdmin cartCount=cartCount}}
+
+  <main>
+    <section>
+      {{>itemdetails product=product}}
+    </section>
+
+    <section>
+      {{>productreview product=product}}
+    </section>
+  </main>
+
+  <script src="/js/product.js"></script>
+  <script src="/js/addToCart.js"></script>
+</body>
+</html>

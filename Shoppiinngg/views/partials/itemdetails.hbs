@@ -1,0 +1,32 @@
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; padding: 24px;">
+  <div style="flex: 1 1 300px;">
+    <img 
+      src="{{this.product.imgUrl}}" 
+      alt="{{this.product.name}}" 
+      style="width: 100%; max-width: 420px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" 
+    />
+  </div>
+
+  <div style="flex: 1 1 300px;">
+    <h2 style="margin-bottom: 12px; font-size: 1.8rem; color: #1e3a8a;">
+      {{this.product.name}}
+    </h2>
+
+    <p style="font-size: 1rem; color: #555; margin-bottom: 16px;">
+      {{this.product.description}}
+    </p>
+
+    <div style="font-size: 1.2rem; font-weight: bold; color: #111;">
+      Price: ₹ {{this.product.price}}
+    </div>
+
+    <div style="margin-top: 20px;">
+      <button 
+        onclick="addToCart('{{this.product._id}}')" 
+        style="padding: 12px 20px; background: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;"
+      >
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
